@@ -1,20 +1,31 @@
 function setup() {
   createCanvas(400, 400);
+  noLoop();
 }
-
-
-
-
 
 function draw() {
   background('white');
 
+  // Speed Lines
+  stroke('black');
+  strokeWeight(3);
+  for (let i = 0; i < 50 ; i++) {
+    line(50 + i * 20, 300, 200 + i * 30, 50);
+  }
+
+  // Steep Triangle (Representing a fast arrow or incline)
+  noStroke();
   fill('DarkMagenta');
-  rect(100,100, 40, 40);
-  arc(50, 50, 80, 80, 0, PI + HALF_PI);
+  triangle(120, 300, 300, 100, 340, 300);
 
-line(25, 25, 500, 500);
+  // Motion Arc
+  fill('black');
+  arc(100, 100, 80, 80, HALF_PI, PI);
 
-
+  // Logo Letter (Optional)
+  fill('black');
+  textSize(50);
+  textAlign(CENTER, CENTER);
+  //text('STEEP', 320, 200);
+ // text('FAST', 330, 240);
 }
-// test test test
