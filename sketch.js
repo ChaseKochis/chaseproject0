@@ -24,9 +24,11 @@ function draw() {
 
   // Logo Letter (Optional)
   fill('black');
-  textSize(50);
+  textSize(45);
   textAlign(CENTER, CENTER);
   //text('STEEP', 320, 200);
  // text('FAST', 330, 240);
  //test test test
+ // test 2 tes t2 test ee
+// test test 
 }
